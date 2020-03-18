@@ -1,0 +1,29 @@
+{
+  "isMakaApp": true,
+  "name": "{{name}}",
+  "description": "{{description}}",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "maka start",
+    "dev": "maka start --dev",
+    "build": "maka build",
+    "lint": "maka2 lint --config-style=react",
+    "test-local": "maka2 test",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "cov": "maka2 cov",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "dependencies": {},
+  "server": {
+    "proxy": null,
+    "port": 8000
+  },
+  "subAppDir": "./apps",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "{{author}}",
+  "license": "MIT"
+}

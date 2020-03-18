@@ -1,2 +1,2 @@
 # maka-boilerplate-helloworld
-maka helloworld模板
+maka2 init 使用的helloworld模板
