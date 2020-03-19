@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "description": "maka2 init 使用的helloworld模板",
   "scripts": {
-    "autod": "maka2 autod",
     "lint": "maka2 lint --config-style=react",
     "test": "npm run lint -- --fix && npm run test-boilerplate",
     "test-boilerplate": "npm run build && npm run install-deps && cd dist && npm test",
     "build": "npm run clean && maka2 init dist --force --silent --template=./",
-    "install-deps": "cd dist && maka2 autod && npm i",
+    "install-deps": "cd dist && yarn autod && npm i",
     "clean": "rm -rf boilerplate/.idea boilerplate/logs boilerplate/node_modules boilerplate/run",
     "ci": "npm run lint && npm run ci-boilerplate",
-    "ci-boilerplate": "npm run build && npm run install-deps && cd dist && npm run ci"
+    "ci-boilerplate": "npm run build && npm run install-deps && cd dist && npm run ci",
+    "autod": "autod"
   },
   "homepage": "https://github.com/ziaochina/maka-boilerplate-hellowrold",
   "bugs": "https://github.com/makajs/maka/issues",

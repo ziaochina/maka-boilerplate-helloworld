@@ -11,6 +11,7 @@ module.exports = {
   ],
   devdep: [
   ],
+  keep: ['maka'],
   exclude: [
     './test/fixtures',
     './dist',
